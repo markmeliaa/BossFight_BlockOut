@@ -29,8 +29,8 @@ public class Respawn : MonoBehaviour
             player.transform.rotation = playerRespawn.transform.rotation;
             Physics.SyncTransforms();
 
-            if (!octogonalFloor.activeSelf)
-                octogonalFloor.SetActive(true);
+            if (octogonalFloor.GetComponent<Animator>().GetBool("falling"))
+                octogonalFloor.GetComponent<Animator>().SetBool("falling", false);
         }
     }
 }

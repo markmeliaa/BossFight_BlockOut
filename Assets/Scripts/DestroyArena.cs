@@ -30,6 +30,6 @@ public class DestroyArena : MonoBehaviour
     IEnumerator DestroyFloor()
     {
         yield return new WaitForSeconds(2.0f);
-        octogonalFloor.SetActive(false);
+        octogonalFloor.GetComponent<Animator>().SetBool("falling", true);
     }
 }
