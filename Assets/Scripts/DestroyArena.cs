@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Respawn : MonoBehaviour
+public class DestroyArena : MonoBehaviour
 {
-    [SerializeField] Transform player;
-    [SerializeField] Transform playerRespawn;
-
     [SerializeField] GameObject octogonalFloor;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -25,12 +22,14 @@ public class Respawn : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.transform.position = playerRespawn.transform.position;
-            player.transform.rotation = playerRespawn.transform.rotation;
-            Physics.SyncTransforms();
-
-            if (!octogonalFloor.activeSelf)
-                octogonalFloor.SetActive(true);
+            if (octogonalFloor.activeSelf)
+                StartCoroutine(DestroyFloor());
         }
+    }
+
+    IEnumerator DestroyFloor()
+    {
+        yield return new WaitForSeconds(2.0f);
+        octogonalFloor.SetActive(false);
     }
 }
