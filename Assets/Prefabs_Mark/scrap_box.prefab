@@ -180,7 +180,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 39ba5dcfa7203de46b186757184e87d8, type: 2}
+  - {fileID: 2100000, guid: 98ad7602b63bda04fb7a790a559acb4c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -346,7 +346,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8d955d3206e1a0a4383b634e2c36eaf6, type: 2}
+  - {fileID: 2100000, guid: d0f9c419631f9014ea19240bd10c4e5f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,7 +429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 14310fcaa8f0e77469b3f22493790c30, type: 2}
+  - {fileID: 2100000, guid: c15232ded033132428874a6adf5e2a76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -460,6 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7524121458644577636}
+  - component: {fileID: -8650830036126829286}
   m_Layer: 0
   m_Name: scrap_box
   m_TagString: Untagged
@@ -483,3 +484,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 180, y: -90, z: 0}
+--- !u!65 &-8650830036126829286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7142951136714504158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.045204, y: 15.513958, z: 24.845821}
+  m_Center: {x: -1.2146289, y: -7.256992, z: 2.3840046}

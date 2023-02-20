@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80358712483196077}
+  - component: {fileID: 1392265988293214329}
   m_Layer: 0
   m_Name: small_box
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1392265988293214329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744973546574018071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.824753, y: 5.1750093, z: 5.670406}
+  m_Center: {x: 0.05383869, y: 0.07544239, z: 0.33088604}
 --- !u!1 &3431856270165129836
 GameObject:
   m_ObjectHideFlags: 0
