@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7917416080559596538}
+  - component: {fileID: 5656980841903566174}
   m_Layer: 0
   m_Name: side_platform_triangle
   m_TagString: Untagged
@@ -115,3 +116,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -315, z: 0}
+--- !u!65 &5656980841903566174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398182006850861376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3919392, y: 0.7575335, z: 2.2584996}
+  m_Center: {x: -0.029020691, y: -0.12123344, z: -0.020503905}
