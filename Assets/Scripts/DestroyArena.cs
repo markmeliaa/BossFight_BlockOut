@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyArena : MonoBehaviour
 {
-    [SerializeField] GameObject octogonalFloor;
+    [SerializeField] GameObject fallingConveyorBelt;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class DestroyArena : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (octogonalFloor.activeSelf)
+            if (fallingConveyorBelt.activeSelf)
                 StartCoroutine(DestroyFloor());
         }
     }
@@ -30,6 +30,6 @@ public class DestroyArena : MonoBehaviour
     IEnumerator DestroyFloor()
     {
         yield return new WaitForSeconds(2.0f);
-        Destroy(octogonalFloor);
+        fallingConveyorBelt.SetActive(false);
     }
 }

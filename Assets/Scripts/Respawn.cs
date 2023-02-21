@@ -7,7 +7,7 @@ public class Respawn : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Transform playerRespawn;
 
-    [SerializeField] GameObject octogonalFloor;
+    [SerializeField] GameObject fallingConveyorBelt;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +29,8 @@ public class Respawn : MonoBehaviour
             player.transform.rotation = playerRespawn.transform.rotation;
             Physics.SyncTransforms();
 
-            if (octogonalFloor.GetComponent<Animator>().GetBool("falling"))
-                octogonalFloor.GetComponent<Animator>().SetBool("falling", false);
+            if (!fallingConveyorBelt.activeSelf)
+                fallingConveyorBelt.SetActive(true);
         }
     }
 }
